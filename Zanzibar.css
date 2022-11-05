@@ -1452,6 +1452,12 @@ button[type=submit] {
 #images-section {
     text-align: center;
     margin: 0 12px 0 0;
+}
+    
+div.section-comments > h1, 
+div.section-comments > p, 
+div.section-comments > form {
+    margin: 0 10px 0 0;
     }
 }
 
@@ -1500,6 +1506,12 @@ button[type=submit] {
     font-size: 1em;
     inline-size: 15%;
     margin: 0 45px;
+}
+    
+div.section-comments > h1, 
+div.section-comments > p, 
+div.section-comments > form {
+    margin: 0 10px 0 0;
     }
 }
 
@@ -1788,6 +1800,12 @@ button[type=submit] {
     inline-size: 450px;
     block-size: 250px;
     margin: -100px 0 0 -50px;
+}
+    
+div.section-comments > h1, 
+div.section-comments > p, 
+div.section-comments > form {
+    margin: 0 10px 0 0;
     }
 }
 
@@ -1802,6 +1820,12 @@ button[type=submit] {
     inline-size: 400px;
     block-size: 200px;
     margin: -100px 0 0 -50px;
+}
+
+ div.section-comments > h1, 
+ div.section-comments > p, 
+ div.section-comments > form {
+    margin: 0 18px 0 0;
     }
 }
 
@@ -1820,6 +1844,10 @@ button[type=submit] {
     inline-size: 330px;
     block-size: 180px;
     margin: -100px 0 0 -50px;
+}
+    
+::placeholder {
+    font-size: 8pt;
     }
 }
 
@@ -1863,6 +1891,16 @@ button[type=submit] {
     font-family: sans-serif;
     letter-spacing: 0.1em;
     color: black;
+}
+    
+div.section-comments > h1, 
+div.section-comments > p, 
+div.section-comments > form {
+    margin: 0 20px 0 0;
+}
+    
+::placeholder {
+    display: none;
     }
 }
 
