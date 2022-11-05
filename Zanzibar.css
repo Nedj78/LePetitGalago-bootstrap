@@ -1852,6 +1852,10 @@ div.section-comments > form {
 }
 
 @media screen and (min-width:320px) and (max-width:420px) {
+    
+.left-nav>span {
+    margin: 17px 0 0 -10px;
+}
 
 #images-section {
     text-align: center;
