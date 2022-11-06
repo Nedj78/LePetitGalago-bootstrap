@@ -995,7 +995,9 @@ input[type=Text]::placeholder {
     font-size: 8pt;
 }
 
-input[type=Text]:hover {
+input[type=Text]:focus,
+input[type=Text]:hover,
+input[type=Text]:active {
     margin-inline-start: 0;
 }
 
@@ -1007,16 +1009,16 @@ input[type=Email]::placeholder {
     color: white;
 }
 
-input[type=Email]:hover {
+input[type=Email]:hover,
+input[type=Email]:focus,
+input[type=Email]:active {
     margin-inline-start: 0;
 }
 
-textarea:hover {
+textarea:hover,
+textarea:focus,
+textarea:active {
     margin-inline-start: 0;
-}
-
-textarea {
-    inline-size: 96%;
 }
 
 textarea::placeholder {
@@ -1391,15 +1393,21 @@ button[type=submit] {
     vertical-align: center;
 }
 
-input[type=Text]:focus {
+input[type=Text]:focus,
+input[type=Text]:hover, 
+input[type=Text]:active {
     margin-inline-start: 0;
 }
 
-input[type=Email]:focus {
+input[type=Email]:focus,
+input[type=Email]:hover,
+input[type=Email]:active {
     margin-inline-start: 0;
 }
 
-Textarea:focus {
+Textarea:focus,
+Textarea:hover,
+Textarea:active {
     margin-inline-start: 0;
 }
 
