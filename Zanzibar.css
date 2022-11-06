@@ -1,5 +1,4 @@
 /*Corps de la page*/
-/*Corps de la page*/
 
 * {
     box-sizing: border-box;
@@ -437,7 +436,7 @@ figcaption {
 
 .banner-element {
     display: inline-block;
-    margin: 100px 80px 0 120px;
+    margin: 100px 80px 0 140px;
 }
 
 .banner-element>img {
@@ -822,6 +821,10 @@ body {
     display: none;
 }
 
+.listes-services, .listes-horaires,.listes-contact {
+    font-size: 8pt;
+}
+
 nav {
     inline-size: 100%;
     text-align: center;
@@ -955,8 +958,9 @@ div.summarize-box {
 .section-comments {
     background-color: #ebebeb;
     block-size: 650px;
+    inline-size: 246px;
     padding: 10px 10px 10px 25px;
-    margin: 10px 20px 35px 25px;
+    margin: 10px 20px 35px 15px;
 }
 
 .section-comments>p {
@@ -1030,7 +1034,7 @@ button[type=submit] {
     flex-direction: column;
     justify-content: left;
     font-size: 0.9em;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 20px;
     padding: 30px 0 50px;
 }
 
@@ -1384,6 +1388,18 @@ button[type=submit] {
     block-size: 65px;
     font-size: 12pt;
     vertical-align: center;
+}
+
+input[type=Text]:focus {
+    margin-inline-start: 0;
+}
+
+input[type=Email]:focus {
+    margin-inline-start: 0;
+}
+
+Textarea:focus {
+    margin-inline-start: 0;
 }
 
 .copyright {
@@ -1829,7 +1845,7 @@ div.section-comments > form {
 .banner-element>img {
     inline-size: 400px;
     block-size: 200px;
-    margin: -100px 0 0 -50px;
+    margin: -100px 0 0 -75px;
 }
 
 div.section-comments > h1, 
@@ -1961,6 +1977,11 @@ div.section-comments > form {
 .image-element>img {
     inline-size: 270px;
     block-size: 350px;
+}
+
+.banner-element > img {
+    display: inline-block;
+    margin: -98px 0 0 -126px;
     }
 }
 
