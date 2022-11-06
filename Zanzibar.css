@@ -11,6 +11,7 @@ body {
     padding: 0 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    zoom: 90%;
 }
 
 /*Menu de navigation------------------------------------------------------------------*/
