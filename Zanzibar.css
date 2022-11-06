@@ -959,7 +959,7 @@ div.summarize-box {
 .section-comments {
     background-color: #ebebeb;
     block-size: 650px;
-    inline-size: 246px;
+    inline-size: 90%;
     padding: 10px 10px 10px 25px;
     margin: 10px 20px 35px 15px;
 }
