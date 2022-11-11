@@ -17,8 +17,10 @@ body {
 /*Menu de navigation------------------------------------------------------------------*/
 
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     inline-size: 100%;
-    text-align: center;
     box-shadow: 0 2px 30px rgba(83, 83, 83, 0.2);
     z-index: 1000;
     background-color: #f8f9fa;
@@ -32,7 +34,7 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav ul li a i {
@@ -56,8 +58,8 @@ nav ul li {
 
 #menu {
     display: inline-flex;
+    flex-direction: row;
     justify-content: space-between;
-    /*axe y*/
     padding: 1px 0 0 0 ;
     transition: top 0.8s;
     text-align: center;
@@ -66,12 +68,15 @@ nav ul li {
 }
 
 .nav-container {
+    margin: 0 auto;
     display: inline-block;
     float: none;
 }
 
 nav li a {
-    display: block;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav li a:hover {
@@ -79,16 +84,48 @@ nav li a:hover {
 }
 
 .lang-wrapper {
+    padding: 0 0 0 0;
+    display: flex;
     background-color: #f8f9fa;
     border-bottom-right-radius: 10px;
-    border: none;
-    display: inline-flex;
-    flex-direction: column;
-    gap: 0;
+    block-size: 52px;
+    flex-direction:  space-between;
 }
 
-.lang-select-fr:hover .dropdown {
-    display: inline-flex;
+.lang-wrapper:hover {
+    cursor: pointer;
+}
+
+.dropdown-lang {
+    margin: 52px 0 0 10px;
+    background-color: #f8f9fa;
+    block-size: 93px;
+    inline-size: 40px;
+    display: none;
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+}
+
+nav > li:hover .dropdown-lang {
+    display: block;
+    z-index: 1;
+    display: block;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+}
+
+.dropdown-lang > li:hover {
+    background-color: grey;
+    inline-size: 40px;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }
 
 .lang-select-fr {
@@ -96,21 +133,8 @@ nav li a:hover {
     flex-direction: column;
     inline-size: 15px;
     block-size: 15px;
-    margin: 8px 30px 0 20px;
+    margin: 15px 30px 0 20px;
     cursor: pointer ;
-}
-
-.lang-select-gb {
-    display: none ;
-    inline-size: 15px ;
-    block-size: 15px ;
-    margin: 5px 30px 0 20px ;
-    cursor: pointer ;
-}
-
-.lang-select-fr:hover,
-.lang-select-gb:hover {
-    padding: 1px 1px 1px 1px;
 }
 
 .hamburger-icon {
@@ -141,7 +165,7 @@ nav li a:hover {
 
 .left-nav>span {
     display: inline-flex;
-    margin: 20px 0 0 -20px;
+    margin: 19px 0 0 -20px;
     block-size: 20px;
     font-size: 10pt;
     font-family: sans-serif;
@@ -173,6 +197,8 @@ nav > ul > li > a {
 
 nav > ul li:hover .dropdown {
     display: block;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
 }
 
 .dropdown {
@@ -226,6 +252,13 @@ nav > ul li:hover .dropdown {
 .menu-accueil:hover i  {
     transform: rotate(-180deg);
     transition-duration: 500ms;
+}
+
+.menu-contact:hover,
+.menu-trips:hover,
+.menu-apropos:hover,
+.menu-accueil:hover  {
+    cursor: pointer;
 }
 
 .menu-contact:not(:hover) i,
@@ -321,11 +354,6 @@ div.summarize-box {
     padding: 0;
     inline-size: 1200px;
     line-height: 1cm;
-}
-
-.summarize-box>ul>li>a {
-    text-decoration: none;
-    color: brown;
 }
 
 .summarize-box>ul>li>a {
@@ -848,11 +876,6 @@ nav {
     position: relative;
 }
 
-.lang-select-fr,
-.lang-select-gb {
-    display: none;
-}
-
 .title-country {
     display: none;
 }
@@ -1019,6 +1042,10 @@ textarea:hover,
 textarea:focus,
 textarea:active {
     margin-inline-start: 0;
+}
+
+textarea {
+    inline-size: 96%;
 }
 
 textarea::placeholder {
@@ -1230,11 +1257,6 @@ nav li {
 }
 
 .title-country {
-    display: none;
-}
-
-.lang-select-fr,
-.lang-select-gb {
     display: none;
 }
 
@@ -1677,26 +1699,24 @@ nav> ul > .menu-accueil > a {
     margin: -20px 5px 5px 5px;
 }
 
+.dropdown-lang {
+    margin: 72px 0 0 0;
+    text-align: center;
+    inline-size: 40px;
+    display: none;
+    position: absolute;
+}
+
 .lang-select-fr {
     display: flex;
     flex-direction: column;
     block-size: 20px;
     inline-size: 20px;
-    margin: 25px 30px 0 15px;
+    margin: 33px 30px 0 9px;
     cursor: pointer;
 }
 
-.lang-select-gb {
-    display: flex;
-    flex-direction: column;
-    block-size: 20px;
-    inline-size: 20px;
-    margin: 3px 30px 0 15px;
-    cursor: pointer;
-}
-
-.lang-select-fr:hover,
-.lang-select-gb:hover {
+.lang-select-fr:hover {
     padding: 1px 1px 1px 1px;
 }
 
@@ -1990,7 +2010,7 @@ div.section-comments > form {
 
 .banner-element > img {
     display: inline-block;
-    margin: -98px 0 0 -83px;
+    margin: -98px 0 0 -83%;
     }
 }
 
