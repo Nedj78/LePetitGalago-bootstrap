@@ -96,6 +96,10 @@ nav li a:hover {
     cursor: pointer;
 }
 
+.lang-wrapper:not(active) .dropdown-lang {
+    display: none;
+}
+
 .dropdown-lang {
     margin: 52px 0 0 10px;
     background-color: #f8f9fa;
@@ -1963,11 +1967,15 @@ div.section-comments > form {
 ::placeholder {
     font-size: 6pt;
     }
+
+.lang-wrapper {
+    block-size: 48px;
+    }
 }
 
 @media screen and (max-width:320px) {
 
-.left-nav>span {
+.left-nav > span {
     display: inline-flex;
     margin: 18px 0 0 -10px;
     block-size: 20px;
@@ -1977,12 +1985,12 @@ div.section-comments > form {
     color: black;
 }
 
-.image-element>img {
+.image-element > img {
     inline-size: 310px;
     block-size: 400px;
 }
 
-.banner-element>img {
+.banner-element > img {
     inline-size: 250px;
     block-size: 120px;
     margin: -100px 0 0 -97px;
@@ -2012,6 +2020,10 @@ div.section-comments > form {
     display: inline-block;
     margin: -98px 0 0 -83%;
     }
+
+.lang-wrapper {
+        block-size: 48px;
+        }
 }
 
 @media screen and (min-width:955px) and (max-width:1400px) {
