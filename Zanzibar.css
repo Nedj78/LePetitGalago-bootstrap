@@ -226,22 +226,24 @@ nav > ul li:hover .dropdown {
     color:black;
 }
 
-.dropdown>li {
+.dropdown > li {
     border: solid thin #f8f9fa;
     display: flex;
     inline-size: 100%;
     block-size: 48.5px;
     font-size: 10pt;
-    padding: 13px 10px;
+    padding: 16px 10px;
+    margin: -1px 0 1.5px 0;
     text-align: start;
     text-decoration: none;
     float: none;
+    border-block-start: 0.1px solid transparent;
     border-block-end: 0.1px solid transparent;
     border-inline-start: 0.1px solid transparent;
-    border-inline-end: 0.1px solid transparent;
+    border-inline-end: 0.1px solid transparent; 
 }
 
-.dropdown>li:hover {
+.dropdown > li:hover {
     background-color: rgb(190, 190, 190);
     transition-delay: 20ms;
 }
@@ -724,7 +726,7 @@ input[type=Text]:active {
 input[type=Email] {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-inline-start: 0;
-    padding: 0 0 5px 15px;
+    padding: 0 0 5px 10px;
     border: none;
     block-size: 40px;
     inline-size: 98%;
@@ -1994,17 +1996,13 @@ div.section-comments > form {
     margin: 0 15px 0 0;
     }
 
-input[type=Text]::placeholder {
-    padding: 0 100px 0 0; 
-}
-
 ::placeholder {
     font-size: 7.5pt;
-    }
+}
 
 .lang-wrapper {
     block-size: 48px;
-    }
+}
 
 .notice {
     margin: 0 0 0 22px;
@@ -2105,3 +2103,16 @@ div.summarize-box {
     margin-inline-start: 40px;
     }
 }
+
+@media screen and (min-width:1600px) {
+
+.lang-wrapper {
+    padding: 0 0 0 0;
+    display: flex;
+    background-color: #f8f9fa;
+    border-bottom-right-radius: 10px;
+    block-size: 48px;
+    flex-direction: space-between;
+    }
+}
+    
