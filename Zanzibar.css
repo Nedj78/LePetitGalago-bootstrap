@@ -441,9 +441,31 @@ div.row-panorama-img {
     text-align: center;
 }
 
+.notice {
+    inline-size: 85%;
+    margin: 0 0 0 90px;
+    padding: 15px 20px 0 0;
+    border: solid thin white;
+    word-break: break-all;
+}
+
+.text-notice {
+    line-height: 2em;
+    margin: 8px 25px 5px 30px;
+    padding: 0 0 18px 0;
+}
+
 #images-section {
     text-align: center;
     margin: 0 50px 0 0;
+}
+
+i.fa-triangle-exclamation {
+    font-size: 20pt;
+}
+
+i.fa-lightbulb {
+    font-size: 20pt;
 }
 
 .image-element {
@@ -1340,6 +1362,10 @@ div.summarize-box {
     border: solid 0.5px brown;
 }
 
+.notice {
+    margin: 0 0 0 40px;
+}
+
 .avatar {
     display: flex;
     flex-direction: column;
@@ -1810,6 +1836,10 @@ button[type=submit] {
     inline-size: 100%;
     white-space: wrap;
     }
+
+.notice {
+    margin: 0 0 0 70px;
+}
 }
 
 /** RESPONSIVE IMAGES**/
@@ -1928,7 +1958,7 @@ div.section-comments > form {
 }
 
 .banner-element>img {
-    inline-size: 140%;
+    inline-size: 160%;
     block-size: 120px;
     margin: -100px 0 0 -80px;
 }
@@ -1964,12 +1994,32 @@ div.section-comments > form {
     margin: 0 15px 0 0;
     }
 
+input[type=Text]::placeholder {
+    padding: 0 100px 0 0; 
+}
+
 ::placeholder {
-    font-size: 6pt;
+    font-size: 7.5pt;
     }
 
 .lang-wrapper {
     block-size: 48px;
+    }
+
+.notice {
+    margin: 0 0 0 22px;
+}
+
+.text-notice {
+    font-size: 11pt;
+}
+
+i.fa-triangle-exclamation {
+    font-size: 14pt;
+}
+
+i.fa-lightbulb {
+    font-size:14pt;
     }
 }
 
@@ -2019,11 +2069,28 @@ div.section-comments > form {
 .banner-element > img {
     display: inline-block;
     margin: -98px 0 0 -83%;
-    }
+}
 
 .lang-wrapper {
         block-size: 48px;
-        }
+    }
+
+.notice {
+    margin: 0 0 0 15px;
+    inline-size: 95%;
+}
+
+.text-notice {
+    font-size: 11pt;
+}
+
+i.fa-triangle-exclamation {
+    font-size: 14pt;
+}
+
+i.fa-lightbulb {
+    font-size:14pt;
+    }
 }
 
 @media screen and (min-width:955px) and (max-width:1400px) {
