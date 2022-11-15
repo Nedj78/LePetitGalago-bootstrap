@@ -14,6 +14,13 @@ body {
     zoom: 95%;
 }
 
+br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 50%;
+  }
+
 /*Menu de navigation------------------------------------------------------------------*/
 
 nav {
@@ -415,8 +422,17 @@ p {
     line-height: 0.95cm;
     font-size: 13pt;
     margin: 0 70px auto;
- 
     justify-content: auto;
+}
+
+h1 {
+    padding: 35px 20px 10px 0;
+    line-height: 0.95cm;
+    font-size: 30pt;
+    margin: 0 70px auto;
+    justify-content: auto;
+    font-family: Palatino;
+    font-style: italic;
 }
 
 aside {
@@ -448,13 +464,14 @@ div.row-panorama-img {
     margin: 0 0 0 90px;
     padding: 15px 20px 0 0;
     border: solid thin white;
-    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .text-notice {
     line-height: 2em;
     margin: 8px 25px 5px 30px;
     padding: 0 0 18px 0;
+    text-align: justify;
 }
 
 #images-section {
@@ -508,7 +525,7 @@ figcaption {
     padding: 40px 50px 20px 0;
     background-color: rgb(253, 242, 242);
     border: solid thin rgba(128, 128, 128, 0.145);
-    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .avatar {
@@ -916,6 +933,17 @@ p {
     margin: 20px 12px;
 }
 
+h1 {
+    padding: 50px 10px 10px 0;
+    line-height: 0.95cm;
+    font-size: 30pt;
+    margin: 0 70px auto;
+    justify-content: auto;
+    font-family: Palatino;
+    font-style: italic;
+    margin: 0 20px;
+}
+
 .summarize-box li {
     display: flex;
     flex-direction: column;
@@ -1249,6 +1277,17 @@ p {
     font-size: 15pt;
     justify-content: auto;
     margin: 0 20px;   
+}
+
+h1 {
+    padding: 50px 10px 10px 0;
+    line-height: 0.95cm;
+    font-size: 30pt;
+    margin: 0 70px auto;
+    justify-content: auto;
+    font-family: Palatino;
+    font-style: italic;
+    margin: 0 23px;
 }
 
 .main-text {
@@ -1707,6 +1746,17 @@ p {
     margin: 0 40px;
 }
 
+h1 {
+    padding: 50px 10px 10px 0;
+    line-height: 0.95cm;
+    font-size: 30pt;
+    margin: 0 70px auto;
+    justify-content: auto;
+    font-family: Palatino;
+    font-style: italic;
+    margin: 0 37px;
+}
+
 #menu {
     display: inline-flex;
     text-align: start;
@@ -1796,7 +1846,7 @@ button[type=submit] {
     padding: 40px 50px 20px 40px;
     background-color: rgb(253, 242, 242);
     border: solid thin rgba(128, 128, 128, 0.145);
-    word-break: break-all;
+    overflow-wrap: break-word
 }
 
 .avatar {
@@ -1842,6 +1892,13 @@ button[type=submit] {
 .notice {
     margin: 0 0 0 70px;
 }
+
+iframe {
+    padding: 0px 0px 73px 25px !important;
+    margin: 10px 50px -15px 40px;
+    block-size: 255px;
+    inline-size: 87.5%;
+    }
 }
 
 /** RESPONSIVE IMAGES**/
@@ -1877,6 +1934,13 @@ button[type=submit] {
     inline-size: 600px;
     block-size: 270px;
     margin: -100px 0 0 -50px;
+}
+
+iframe {
+    padding: 0px 0px 73px 25px !important;
+    margin: 10px 50px -15px 13px;
+    block-size: 255px;
+    inline-size: 90%;
     }
 }
 
@@ -1897,6 +1961,13 @@ div.section-comments > h1,
 div.section-comments > p, 
 div.section-comments > form {
     margin: 0 10px 0 0;
+}
+
+iframe {
+    padding: 0px 0px 73px 25px !important;
+    margin: 10px 50px -15px 13px;
+    block-size: 255px;
+    inline-size: 90%;
     }
 }
 
@@ -1917,6 +1988,13 @@ div.section-comments > h1,
 div.section-comments > p, 
 div.section-comments > form {
     margin: 0 15px 0 0;
+}
+
+iframe {
+    padding: 0px 0px 73px 25px !important;
+    margin: 10px 50px -15px 13px;
+    block-size: 255px;
+    inline-size: 90%;
     }
 }
 
@@ -1941,12 +2019,19 @@ div.section-comments > h1,
 div.section-comments > p, 
 div.section-comments > form {
     margin: 0 15px 0 0;
-    }
+}
 
 ::placeholder {
     font-size: 7pt;
-    }
 }
+
+iframe {
+    padding: 0px 0px 73px 25px !important;
+    margin: 10px 50px -15px 13px;
+    block-size: 255px;
+    inline-size: 90%;
+}
+
 
 @media screen and (min-width:320px) and (max-width:420px) {
 
@@ -2100,7 +2185,15 @@ margin: 0 35px 0 20px;
 
 div.summarize-box {
     inline-size: 90%;
-    margin-inline-start: 40px;
+    margin-inline-start: 35px;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1600px) {
+    
+div.summarize-box {
+    inline-size: 90%;
+    margin-inline-start: 70px;
     }
 }
 
@@ -2113,6 +2206,11 @@ div.summarize-box {
     border-bottom-right-radius: 10px;
     block-size: 48px;
     flex-direction: space-between;
+    }
+
+div.summarize-box {
+    inline-size: 90%;
+    margin-inline-start: 65px;
     }
 }
     
