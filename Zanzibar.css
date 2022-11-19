@@ -1,3 +1,4 @@
+/*Corps de la page*/
 
 * {
     box-sizing: border-box;
@@ -36,6 +37,7 @@ nav {
     block-size: 80px;
     margin: 0;
 }
+
 
 nav ul {
     display: flex;
@@ -910,7 +912,7 @@ nav {
     inset-block-start: 0;
     transition: top 0.8s;
     text-align: center;
-    block-size: 70px;
+    block-size: 50px;
     transition: 0.4s;
 }
 
@@ -924,23 +926,29 @@ nav {
     display: none;
 }
 
+.lang-wrapper {
+    padding: 0 0 0 0;
+    display: flex;
+    background-color: #f8f9fa;
+    border-bottom-right-radius: 10px;
+    block-size: 48px;
+}
+
 p {
     padding: 20px 0 0 0;
-    line-height: 1cm;
-    font-size: 14pt;
+    line-height: 0.8cm;
+    font-size: 10pt;
     justify-content: auto;
     margin: 20px 12px;
 }
 
 h1 {
-    padding: 50px 10px 10px 0;
+    padding: 50px 10px 0 0;
     line-height: 0.95cm;
-    font-size: 30pt;
-    margin: 0 70px auto;
-    justify-content: auto;
+    font-size: 17pt;
     font-family: Palatino;
     font-style: italic;
-    margin: 0 20px;
+    margin: 0 0 -25px 15px;
 }
 
 .summarize-box li {
@@ -955,7 +963,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.summarize-box>ul {
+.summarize-box > ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -1164,7 +1172,43 @@ button[type=submit] {
 }
 
 .top-img {
-    margin: 60px 0;
+    margin: 50px 0 -15px 0;
+    padding: 5px 5px 0 5px;
+}
+
+iframe {
+    padding: 0 55px 36px 25px !important;
+    margin: 10px 50px 10px 30px;
+    block-size: 255px;
+    inline-size: 87.5%;
+}
+
+.banner-element>img {
+    padding: -50px 0 0 0; 
+    inline-size: 250px;
+    block-size: 130px;
+    margin: -120px -40px 25px -100px;
+}
+
+.notice {
+    margin: 0 30px 0 20px;
+    inline-size: 88%;
+}
+
+.text-notice {
+    font-size: 10pt;
+}
+
+#images-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 5px;
+    text-align: center;
+}
+
+.image-element>img {
+    inline-size: 100%;
+    block-size: 380px;
     }
 }
 
@@ -1252,6 +1296,7 @@ button[type=submit] {
 
 html {
     overflow-x: hidden;
+    padding-block-start: 60px;
 }
 
 body {
@@ -1266,27 +1311,22 @@ body {
     display: none;
 }
 
-html {
-    padding-block-start: 60px;
-}
-
 p {
     padding: 35px 0;
     line-height: 1cm;
-    font-size: 15pt;
-    justify-content: auto;
+    font-size: 11pt;
+    text-align: justify;
     margin: 0 20px;   
 }
 
 h1 {
     padding: 50px 10px 10px 0;
     line-height: 0.95cm;
-    font-size: 30pt;
-    margin: 0 70px auto;
+    font-size: 25pt;
     justify-content: auto;
     font-family: Palatino;
     font-style: italic;
-    margin: 0 23px;
+    margin: -15px 23px;
 }
 
 .main-text {
@@ -1320,6 +1360,8 @@ nav li {
 
 .top-img {
     position: relative;
+    margin: 50px 0 -15px 0;
+    padding: 5px 5px 0 5px;
 }
 
 .title-country {
@@ -1726,7 +1768,14 @@ button[type=submit] {
 
 #images-section {
     text-align: center;
-    margin: 0 12px 0 0;
+    margin: 0 0 15px;
+}
+
+iframe {
+    padding: 0px 40px 37px 25px !important;
+    margin: 10px 50px 10px 40px;
+    block-size: 255px;
+    inline-size: 87.5%;
     }
 }
 
@@ -1886,15 +1935,16 @@ button[type=submit] {
     padding: 0 20px 0 0;
     inline-size: 100%;
     white-space: wrap;
- }
+}
 
 .notice {
-    margin: 0 0 0 70px;
+    margin: 0 0 0 35px;
+    inline-size:92%;
 }
 
 iframe {
-    padding: 0px 0px 73px 25px !important;
-    margin: 10px 50px -15px 40px;
+    padding: 0px 0px 35px 25px !important;
+    margin: 10px 50px 10px 40px;
     block-size: 255px;
     inline-size: 87.5%;
     }
@@ -1919,6 +1969,13 @@ iframe {
     inline-size: 700px;
     block-size: 280px;
     margin: -100px 0 0 -50px;
+}
+
+iframe {
+    padding: 0px 0px 35px 20px !important;
+    margin: 10px 90px -15px 20px;
+    block-size: 255px;
+    inline-size: 87%;
     }
 }
 
@@ -1936,8 +1993,8 @@ iframe {
 }
 
 iframe {
-    padding: 0px 0px 73px 25px !important;
-    margin: 10px 50px -15px 13px;
+    padding: 0px 0px 37px 25px !important;
+    margin: 10px 50px 10px 13px;
     block-size: 255px;
     inline-size: 90%;
     }
@@ -1963,8 +2020,8 @@ div.section-comments > form {
 }
 
 iframe {
-    padding: 0px 0px 73px 25px !important;
-    margin: 10px 50px -15px 13px;
+    padding: 0 2px 37px 25px !important;
+    margin: 10px 50px 10px 13px;
     block-size: 255px;
     inline-size: 90%;
     }
@@ -1990,8 +2047,8 @@ div.section-comments > form {
 }
 
 iframe {
-    padding: 0px 0px 73px 25px !important;
-    margin: 10px 50px -15px 13px;
+    padding: 0px 0px 36px 25px !important;
+    margin: 10px 50px -10px 13px;
     block-size: 255px;
     inline-size: 90%;
     }
@@ -2025,12 +2082,12 @@ div.section-comments > form {
 }
 
 iframe {
-    padding: 0px 0px 73px 25px !important;
-    margin: 10px 50px -15px 13px;
-    block-size: 255px;
+    padding: 0 2px 12px 25px !important;
+    margin: 10px 40px 50px 13px;
+    block-size: 230px;
     inline-size: 90%;
+    }
 }
-
 
 @media screen and (min-width:320px) and (max-width:420px) {
 
@@ -2038,15 +2095,20 @@ iframe {
     text-align: center;
 }
 
+.image-element {
+    display: inline-block;
+    margin: 8px 5px 0px 3px;
+}
+
 .image-element>img {
-    inline-size: 340px;
+    inline-size: 100%;
     block-size: 420px;
 }
 
 .banner-element>img {
-    inline-size: 160%;
-    block-size: 120px;
-    margin: -100px 0 0 -80px;
+    inline-size: 150%;
+    block-size: 160px;
+    margin: -110px 0px 0px -72px;
 }
 
 #menu {
@@ -2078,7 +2140,7 @@ div.section-comments > h1,
 div.section-comments > p, 
 div.section-comments > form {
     margin: 0 15px 0 0;
-    }
+}
 
 ::placeholder {
     font-size: 7.5pt;
@@ -2089,7 +2151,7 @@ div.section-comments > form {
 }
 
 .notice {
-    margin: 0 0 0 22px;
+    margin: 0 0 20px 35px;
 }
 
 .text-notice {
@@ -2102,6 +2164,13 @@ i.fa-triangle-exclamation {
 
 i.fa-lightbulb {
     font-size:14pt;
+}
+
+iframe {
+    padding: 5px 5px 10px 5px !important;
+    margin: 25px 45px 40px 30px;
+    block-size: 265px;
+    inline-size: 87.5%;
     }
 }
 
@@ -2117,19 +2186,17 @@ i.fa-lightbulb {
     color: black;
 }
 
-.image-element > img {
-    inline-size: 310px;
-    block-size: 400px;
+#images-section {
+    text-align: center;
+}
+
+.banner-element {
+    margin: 85px -65px 25px 5px;
 }
 
 .banner-element > img {
     inline-size: 250px;
     block-size: 120px;
-    margin: -100px 0 0 -97px;
-}
-
-#menu {
-    block-size: 50px;
 }
 
 .hamburger-icon {
@@ -2143,19 +2210,9 @@ i.fa-lightbulb {
     inline-size: 40px;
 }
 
-.image-element>img {
-    inline-size: 270px;
-    block-size: 350px;
-}
-
-.banner-element > img {
-    display: inline-block;
-    margin: -98px 0 0 -83%;
-}
-
 .lang-wrapper {
-        block-size: 48px;
-    }
+    block-size: 48px;
+}
 
 .notice {
     margin: 0 0 0 15px;
@@ -2178,8 +2235,8 @@ i.fa-lightbulb {
 @media screen and (min-width:955px) and (max-width:1400px) {
 
 #images-section {
-text-align: center;
-margin: 0 35px 0 20px;
+    text-align: center;
+    margin: 0 35px 0 20px;
 }
 
 div.summarize-box {
@@ -2205,11 +2262,10 @@ div.summarize-box {
     border-bottom-right-radius: 10px;
     block-size: 48px;
     flex-direction: space-between;
-    }
+}
 
 div.summarize-box {
     inline-size: 90%;
-    margin-inline-start: 65px;
+    margin-inline-start: 65px; 
     }
 }
-    
