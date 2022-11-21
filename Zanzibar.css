@@ -1,3 +1,5 @@
+/*Corps de la page*/
+
 * {
     box-sizing: border-box;
 }
@@ -2167,13 +2169,13 @@ iframe {
 
 .image-element>img {
     inline-size: 100%;
-    block-size: 600px;
+    block-size: 660px;
 }
 
 .banner-element>img {
     inline-size: 150%;
     block-size: 125px;
-    margin: -110px 0px 30px -70px;
+    margin: -110px 80px 30px -30px;
 }
 
 #menu {
