@@ -1,3 +1,5 @@
+/*Corps de la page*/
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +11,7 @@ body {
     padding: 0 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    zoom: 95%;
+    zoom: 85%;
 }
 
 br {
@@ -258,48 +260,48 @@ nav > ul li:hover .dropdown {
     color: rgb(255, 255, 255);
 }
 
-.menu-contact:hover i,
-.menu-trips:hover i,
-.menu-apropos:hover i,
-.menu-accueil:hover i  {
+.menu-Titre-4:hover i,
+.menu-Titre-2:hover i,
+.menu-Titre-3:hover i,
+.menu-Titre-1:hover i  {
     transform: rotate(-180deg);
     transition-duration: 500ms;
 }
 
-.menu-contact:hover,
-.menu-trips:hover,
-.menu-apropos:hover,
-.menu-accueil:hover  {
+.menu-Titre-4:hover,
+.menu-Titre-2:hover,
+.menu-Titre-3:hover,
+.menu-Titre-1:hover  {
     cursor: pointer;
 }
 
-.menu-contact:not(:hover) i,
-.menu-trips:not(:hover) i,
-.menu-apropos:not(:hover) i,
-.menu-accueil:not(:hover) i {
+.menu-Titre-4:not(:hover) i,
+.menu-Titre-2:not(:hover) i,
+.menu-Titre-3:not(:hover) i,
+.menu-Titre-1:not(:hover) i {
     transform: rotate(0deg);
     transition-duration: 500ms;
 }
 
-.menu-contact {
+.menu-Titre-4 {
     inline-size: 220px;
     block-size: 52px;
     white-space: nowrap;
 }
 
-.menu-apropos {
+.menu-Titre-3 {
     inline-size: 220px;
     block-size: 52px;
     white-space: nowrap;
 }
 
-.menu-trips {
+.menu-Titre-2 {
     inline-size: 220px;
     block-size: 52px;
     white-space: nowrap;
 }
 
-.menu-accueil {
+.menu-Titre-1 {
     inline-size: 220px;
     block-size: 52px;
     white-space: nowrap;
@@ -397,6 +399,7 @@ Main {
     /* Ceci permet de centrer le div selon zoom -/+ */
     min-block-size: 5800px;
     /* min-height pour le footer */
+    box-shadow: 0 1px 10px rgba(83, 83, 83, 0.091);
 }
 
 .main-text>h1 {
@@ -478,6 +481,12 @@ div.row-panorama-img {
     margin: 0 50px 0 0;
 }
 
+#myimg:hover {
+    cursor:pointer;
+    transition: 0.5s ease;
+    transform: scale(1.3)
+}
+
 i.fa-triangle-exclamation {
     font-size: 20pt;
 }
@@ -520,7 +529,7 @@ figcaption {
 
 .about-the-author {
     inline-size: 90%;
-    margin: 0 0 0 70px;
+    margin: 80px 0 0 70px;
     padding: 40px 50px 20px 0;
     background-color: rgb(253, 242, 242);
     border: solid thin rgba(128, 128, 128, 0.145);
@@ -671,7 +680,6 @@ footer a {
 /*Formulaire pour commenter*/
 
 .section-comments {
-    background-color: #ebebeb;
     block-size: 650px;
     padding: 20px 10px 10px 30px;
     margin: 50px 45px 35px 90px;
@@ -891,10 +899,10 @@ body {
     overflow-y: hidden;
 }
 
-.menu-accueil,
-.menu-trips,
-.menu-apropos,
-.menu-contact,
+.menu-Titre-1,
+.menu-Titre-2,
+.menu-Titre-3,
+.Titre-4,
 #logo-galago {
     display: none;
 }
@@ -1180,9 +1188,9 @@ button[type=submit] {
 }
 
 iframe {
-    padding: 0 55px 36px 25px !important;
+    padding: 20px 55px 0 65px !important;
     margin: 10px 50px 10px 30px;
-    block-size: 255px;
+    block-size: 325px;
     inline-size: 87.5%;
 }
 
@@ -1306,10 +1314,10 @@ body {
     overflow: hidden;
 }
 
-.menu-accueil,
-.menu-trips,
-.menu-apropos,
-.menu-contact,
+.menu-Titre-1,
+.menu-Titre-2,
+.menu-Titre-3,
+.Titre-4,
 #logo-galago {
     display: none;
 }
@@ -1818,15 +1826,15 @@ h1 {
     text-align: start;
 }
 
-.menu-accueil,
-.menu-trips,
-.menu-apropos,
-.menu-contact,
+.menu-Titre-1,
+.menu-Titre-2,
+.menu-Titre-3,
+.Titre-4,
 #logo-galago {
     display: none;
 }
 
-nav> ul > .menu-accueil > a {
+nav> ul > .menu-Titre-1 > a {
     padding: 17px 40px 10px 40px;
 }
 
@@ -1953,7 +1961,7 @@ button[type=submit] {
 iframe {
     padding: 0px 0px 35px 25px !important;
     margin: 10px 50px 10px 40px;
-    block-size: 255px;
+    block-size: 343px;
     inline-size: 87.5%;
 }
 
@@ -1987,7 +1995,7 @@ iframe {
 iframe {
     padding: 0px 0px 35px 20px !important;
     margin: 10px 90px -15px 20px;
-    block-size: 255px;
+    block-size: 343px;
     inline-size: 87%;
     }
 }
@@ -2008,7 +2016,7 @@ iframe {
 iframe {
     padding: 0px 0px 37px 25px !important;
     margin: 10px 50px 10px 13px;
-    block-size: 255px;
+    block-size: 343px;
     inline-size: 90%;
     }
 }
@@ -2035,7 +2043,7 @@ div.section-comments > form {
 iframe {
     padding: 0 2px 37px 25px !important;
     margin: 10px 50px 10px 13px;
-    block-size: 255px;
+    block-size: 344px;
     inline-size: 90%;
     }
 }
@@ -2062,7 +2070,7 @@ div.section-comments > form {
 iframe {
     padding: 0px 0px 36px 25px !important;
     margin: 10px 50px -10px 13px;
-    block-size: 255px;
+    block-size: 342px;
     inline-size: 90%;
     }
 }
@@ -2097,7 +2105,7 @@ div.section-comments > form {
 iframe {
     padding: 0 2px 12px 25px !important;
     margin: 10px 40px 50px 13px;
-    block-size: 230px;
+    block-size: 320px;
     inline-size: 90%;
     }
 }
@@ -2115,7 +2123,7 @@ iframe {
 
 .image-element>img {
     inline-size: 100%;
-    block-size: 620px;
+    block-size: 520px;
 }
 
 .banner-element>img {
@@ -2179,9 +2187,9 @@ i.fa-lightbulb {
 }
 
 iframe {
-    padding: 5px 5px 10px 5px !important;
+    padding: 25px 5px 10px 45px !important;
     margin: 25px 45px 40px 30px;
-    block-size: 265px;
+    block-size: 340px;
     inline-size: 87.5%;
     }
 }
@@ -2262,7 +2270,11 @@ div.summarize-box {
 div.summarize-box {
     inline-size: 90%;
     margin-inline-start: 70px;
-    }
+}
+
+.lang-wrapper {
+    block-size: 42px;
+}
 }
 
 @media screen and (min-width:1600px) {
