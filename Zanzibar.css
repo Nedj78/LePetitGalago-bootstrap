@@ -1,5 +1,3 @@
-/*Corps de la page*/
-
 * {
     box-sizing: border-box;
 }
@@ -96,7 +94,7 @@ nav li a:hover {
     display: flex;
     background-color: #f8f9fa;
     border-bottom-right-radius: 10px;
-    block-size: 52px;
+    block-size: 48px;
     flex-direction:  space-between;
 }
 
@@ -135,6 +133,7 @@ nav > li:hover .dropdown-lang {
     from { opacity: 0; }
       to { opacity: 1; }
 }
+
 @keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
@@ -368,6 +367,7 @@ div.summarize-box {
     padding: 0;
     inline-size: 1200px;
     line-height: 1cm;
+    font-size: 15pt;
 }
 
 .summarize-box>ul>li>a {
@@ -463,7 +463,7 @@ div.row-panorama-img {
 
 .notice {
     inline-size: 85%;
-    margin: 0 0 0 90px;
+    margin: 0 0 0 68px;
     padding: 15px 20px 0 0;
     border: solid thin white;
     overflow-wrap: break-word;
@@ -969,7 +969,7 @@ h1 {
     padding: 0;
     inline-size: 300px;
     line-height: 0.6cm;
-    font-size: 8pt;
+    font-size: 12pt;
     white-space: wrap;
     flex-wrap: wrap;
 }
@@ -987,6 +987,7 @@ h1 {
 div.summarize-box {
     display: flex;
     flex-direction: column;
+    padding: 15px 0 15px 15px ;
     margin: 0 0 0 10px; 
     inline-size: 95%;
 }
@@ -1274,6 +1275,11 @@ div.summarize-box {
     transform: scale(1)
 }
 
+div.section-comments > p, 
+div.section-comments > form {
+    margin: 0 15px 0 0;
+}
+
 button[type=submit] {
     block-size: 30px;
     font-size: 12pt;
@@ -1336,8 +1342,8 @@ body {
 p {
     padding: 35px 0;
     line-height: 1cm;
-    font-size: 11pt;
-    text-align: justify;
+    font-size: 13pt;
+    text-align: normmal;
     margin: 0 20px;   
 }
 
@@ -1431,7 +1437,7 @@ input[type=submit] {
     padding: 0;
     inline-size: 300px;
     line-height: 0.6cm;
-    font-size: 8pt;
+    font-size: 13pt;
     flex-wrap: wrap;
 }
 
@@ -1447,8 +1453,8 @@ input[type=submit] {
 div.summarize-box {
     display: flex;
     flex-direction: column;
+    padding: 15px 0 15px 15px ;
     margin: 0 0 0 18px;
-    
     inline-size: 95%;
 }
 
@@ -1597,6 +1603,10 @@ Textarea:active {
 
 @media screen and (min-width: 600px) and (max-width: 799px) {
 
+p {
+    font-size: 15pt;
+}
+
 .avatar {
     display: flex;
     flex-direction: column;
@@ -1660,6 +1670,7 @@ div.section-comments > form {
 }
 
 @media screen and (min-width: 800px) and (max-width: 954px) {
+
 .avatar {
     display: flex;
     flex-direction: column;
@@ -1718,6 +1729,10 @@ div.section-comments > form {
 }
 
 @media screen and (min-width: 350px) and (max-width: 599px) {
+
+p {
+    font-size: 15pt;
+}
 
 .left-nav>span {
     margin: 18px 0 0 -20px;
@@ -1910,7 +1925,7 @@ div.summarize-box {
     padding: 0;
     inline-size: 600px;
     line-height: 1cm;
-    font-size: 12pt;
+    font-size: 14pt;
     flex-wrap: wrap;
 }
 
@@ -2119,6 +2134,10 @@ iframe {
 
 @media screen and (min-width:420px) and (max-width:520px) {
 
+p {
+    font-size: 14pt;
+}
+
 #images-section {
     text-align: center;
 }
@@ -2158,6 +2177,10 @@ iframe {
 
 @media screen and (min-width:320px) and (max-width:420px) {
 
+p {
+    font-size: 14pt;
+}
+
 #images-section {
     text-align: center;
 }
@@ -2172,10 +2195,9 @@ iframe {
     block-size: 660px;
 }
 
-.banner-element>img {
-    inline-size: 150%;
-    block-size: 125px;
-    margin: -110px 80px 30px -30px;
+.banner-element>img,
+.banner-section {
+    display: none;
 }
 
 #menu {
@@ -2203,9 +2225,14 @@ iframe {
     color: black;
 }
 
+div.section-comments {
+    margin: -120px 0;
+}
+
+div.section-comments > h1,
 div.section-comments > p, 
 div.section-comments > form {
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 -5px;
 }
 
 ::placeholder {
@@ -2245,6 +2272,10 @@ iframe {
 }
 
 @media screen and (max-width:320px) {
+
+p {
+    font-size: 14pt;
+}
 
 .left-nav > span {
     display: inline-flex;
@@ -2327,8 +2358,8 @@ div.summarize-box {
 }
 
 .lang-wrapper {
-    block-size: 42px;
-}
+    block-size: 52px;
+    }
 }
 
 @media screen and (min-width:1600px) {
