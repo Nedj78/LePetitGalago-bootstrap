@@ -1,5 +1,6 @@
 
 
+
 * {
     box-sizing: border-box;
 }
@@ -19,7 +20,7 @@ br {
     margin: 2em;
     display: block;
     font-size: 50%;
-  }
+}
 
 ol li {
     list-style: decimal;
@@ -1058,7 +1059,7 @@ h1 {
 .summarize-box li {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 0;
     padding: 0 0 0 7px;
     inline-size: 300px;
     line-height: 0.6cm;
@@ -1527,7 +1528,7 @@ input[type=submit] {
 .summarize-box li {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 0;
     padding: 0 0 0 7px;
     inline-size: 600px;
     line-height: 0.6cm;
@@ -2031,7 +2032,7 @@ div.summarize-box {
 .summarize-box li {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 0;
     padding: 0 0 0 7px;
     inline-size: 600px;
     line-height: 1cm;
@@ -2297,10 +2298,16 @@ iframe {
     visibility: hidden;    
 }
 
+.summarize-box li {
+    inline-size: 380px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 7px;
+}
+
 .summarize-box li:hover {
     background-color: rgba(128, 128, 128, 0.256);
     transition: 0ms;
-    inline-size: 400px;
+    inline-size: 380px;
     }
 }
 
@@ -2411,7 +2418,7 @@ h2 {
 
 .summarize-box li {
     inline-size: 380px;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 0;
     padding: 0 0 0 7px;
 }
 
@@ -2507,7 +2514,7 @@ div.summarize-box {
 
 .summarize-box li {
     inline-size: 450px;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 0;
     padding: 0 0 0 7px;
 }
 
@@ -2527,7 +2534,7 @@ div.summarize-box {
 
 .summarize-box li {
     inline-size: 450px;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 0;
     padding: 0 0 0 7px;
 }
 
@@ -2560,8 +2567,8 @@ div.summarize-box {
 }
 
 .summarize-box li {
-    inline-size: 90%;
-    margin: 0 0 0 -10px;
+    inline-size: 500px;
+    margin: 0 0 0 0;
     padding: 0 0 0 7px;
-}
+    }
 }
