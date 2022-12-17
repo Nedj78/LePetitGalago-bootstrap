@@ -386,6 +386,7 @@ div.summarize-box {
 
 .summarize-box li:hover {
     background-color: rgba(128, 128, 128, 0.256);
+    transition: 0ms;
 }
 
 .summarize-box>ul>li>a {
@@ -1693,7 +1694,8 @@ Textarea:active {
 }
 
 .summarize-box li:hover {
-    background-color: none;
+    background-color: rgba(128, 128, 128, 0.256);
+    transition: 0ms;
     inline-size: 400px;
     }
 }
@@ -1767,7 +1769,8 @@ div.section-comments > form {
 }
 
 .summarize-box li:hover {
-    background-color: none;
+    background-color: rgba(128, 128, 128, 0.256);
+    transition: 0ms;
     inline-size: 400px;
     }
 }
@@ -2294,7 +2297,8 @@ iframe {
 }
 
 .summarize-box li:hover {
-    background-color: none;
+    background-color: rgba(128, 128, 128, 0.256);
+    transition: 0ms;
     inline-size: 400px;
     }
 }
@@ -2405,8 +2409,9 @@ h2 {
 }
 
 .summarize-box li:hover {
-    background-color: none;
-    max-inline-size: 380px;
+    background-color: rgba(128, 128, 128, 0.256);
+    transition: 0ms;
+    inline-size: 380px;
     }
 }
 
@@ -2494,7 +2499,8 @@ div.summarize-box {
 }
 
 .summarize-box li:hover {
-    background-color: none;
+    background-color: rgba(128, 128, 128, 0.256);
+    transition: 0ms;
     inline-size: 450px;
     }
 }
