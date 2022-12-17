@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -488,7 +489,7 @@ div.row-panorama-img {
     margin: 8px 25px 5px 30px;
     padding: 0 0 18px 0;
     text-align: justify;
-    font-size: 18pt;
+    font-size: 14pt;
 }
 
 #images-section {
@@ -2506,6 +2507,13 @@ div.summarize-box {
 
 .lang-wrapper {
     block-size: 50px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    block-size: 80%;
+    max-inline-size: 70%;
     }
 }
 
