@@ -1077,7 +1077,7 @@ div.summarize-box {
     display: flex;
     flex-direction: column;
     padding: 15px 0 15px 15px ;
-    margin: 0 0 0 10px; 
+    margin: 50px 0 0 10px; 
     inline-size: 95%;
 }
 
@@ -1544,7 +1544,7 @@ div.summarize-box {
     display: flex;
     flex-direction: column;
     padding: 15px 0 15px 15px ;
-    margin: 0 0 0 18px;
+    margin: 50px 0 0 18px;
     inline-size: 95%;
 }
 
@@ -1688,6 +1688,11 @@ Textarea:active {
 
 .modal {
     visibility: hidden;    
+}
+
+.summarize-box li:hover {
+    background-color: rgba(128, 128, 128, 0.256);
+    inline-size: 400px;
     }
 }
 
@@ -1757,6 +1762,11 @@ div.section-comments > form {
 
 .modal {
     visibility: hidden;    
+}
+
+.summarize-box li:hover {
+    background-color: rgba(128, 128, 128, 0.256);
+    inline-size: 400px;
     }
 }
 
@@ -2279,6 +2289,11 @@ iframe {
 
 .modal {
     visibility: hidden;    
+}
+
+.summarize-box li:hover {
+    background-color: rgba(128, 128, 128, 0.256);
+    inline-size: 400px;
     }
 }
 
@@ -2385,6 +2400,11 @@ iframe {
 
 h2 {
     padding:20px 0 0 23px !important;
+}
+
+.summarize-box li:hover {
+    background-color: rgba(128, 128, 128, 0.256);
+    inline-size: 380px;
     }
 }
 
@@ -2469,6 +2489,11 @@ i.fa-lightbulb {
 div.summarize-box {
     inline-size: 90%;
     margin-inline-start: 35px;
+}
+
+.summarize-box li:hover {
+    background-color: rgba(128, 128, 128, 0.256);
+    inline-size: 450px;
     }
 }
 
