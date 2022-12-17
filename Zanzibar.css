@@ -1,4 +1,5 @@
 
+
 * {
     box-sizing: border-box;
 }
@@ -376,8 +377,8 @@ div.summarize-box {
 .summarize-box li {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0 6px;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 7px;
     inline-size: 550px;
     line-height: 1cm;
     font-size: 15pt;
@@ -1057,8 +1058,8 @@ h1 {
 .summarize-box li {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 7px;
     inline-size: 300px;
     line-height: 0.6cm;
     font-size: 12pt;
@@ -1526,8 +1527,8 @@ input[type=submit] {
 .summarize-box li {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 7px;
     inline-size: 600px;
     line-height: 0.6cm;
     font-size: 13pt;
@@ -2030,8 +2031,8 @@ div.summarize-box {
 .summarize-box li {
     display: flex;
     flex-direction: column;
-    margin: 0; 
-    padding: 0;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 7px;
     inline-size: 600px;
     line-height: 1cm;
     font-size: 14pt;
@@ -2408,6 +2409,12 @@ h2 {
     padding:20px 0 0 23px !important;
 }
 
+.summarize-box li {
+    inline-size: 380px;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 7px;
+}
+
 .summarize-box li:hover {
     background-color: rgba(128, 128, 128, 0.256);
     transition: 0ms;
@@ -2498,6 +2505,12 @@ div.summarize-box {
     margin-inline-start: 35px;
 }
 
+.summarize-box li {
+    inline-size: 450px;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 7px;
+}
+
 .summarize-box li:hover {
     background-color: rgba(128, 128, 128, 0.256);
     transition: 0ms;
@@ -2510,6 +2523,12 @@ div.summarize-box {
 div.summarize-box {
     inline-size: 90%;
     margin-inline-start: 70px;
+}
+
+.summarize-box li {
+    inline-size: 450px;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 7px;
 }
 
 .lang-wrapper {
@@ -2538,5 +2557,11 @@ div.summarize-box {
 div.summarize-box {
     inline-size: 90%;
     margin-inline-start: 65px; 
-    }
+}
+
+.summarize-box li {
+    inline-size: 90%;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 7px;
+}
 }
